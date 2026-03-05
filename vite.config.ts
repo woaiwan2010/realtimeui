@@ -7,7 +7,7 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   
   return {
-    base: '/-/', // ✨ 正确配置的 GitHub 仓库名
+    base: '/realtimeui/', // ✨ 正确配置的 GitHub 仓库名
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
